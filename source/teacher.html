@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Учительская</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">Политех</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav nav-exit">
+            <li class="nav-item">
+              <a class="btn btn-outline-dark btn-exit" href="login.html">Выйти</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main class="main container">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="full-name">Фамилия Имя Отчество студента</label>
+              <input type="text" class="form-control" id="full-name" placeholder="Иванов Иван Иванович">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="study-group">№ учебной группы</label>
+              <input type="text" class="form-control" id="study-group" placeholder="171-371">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="date-visit">Дата посещения</label>
+              <input type="date" id="date-visit" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="gym">Спортзал</label>
+              <!-- <input type="text" class="form-control" id="gym" placeholder="Тренажерный зал №3"> -->
+              <select id="gym" class="form-control">
+                <option selected>Тренажерный зал №3</option>
+                <option>Измайлово</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label for="exercise-date">Дата сдачи норматива</label>
+              <input type="date" id="exercise-date" class="form-control">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="exercise">Норматив</label>
+              <select id="exercise" class="form-control">
+                <option selected>Пресс</option>
+                <option>Скакалка</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3">
+              <label for="exercise-result">Результат</label>
+              <input type="text" id="exercise-result" class="form-control">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="exercise-score">Балл</label>
+              <select id="exercise-score" class="form-control">
+                <option selected>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Заполнить</button>
+        </form>
+      </main>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

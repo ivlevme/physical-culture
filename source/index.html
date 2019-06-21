@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Политех</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav nav-login">
+            <li class="nav-item">
+              <a class="btn btn-outline-dark btn-login" href="login.html">Войти</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main class="main container">
+        <form>
+          <div class="row">
+            <div class="col-8">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Фио</label>
+                <input type="text" class="form-control" placeholder="Иванов Иван Иванович">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-group">
+                <label for="exampleInputPassword1">№ учебной группы</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="171-317">
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Проверить посещения</button>
+      </form>
+      </main>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
